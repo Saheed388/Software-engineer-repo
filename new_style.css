@@ -418,6 +418,18 @@ text-align: left;
     border-radius: 100px;
 }
 
+.foot{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.foot span{
+    color: red;
+}
+
+
 /* Media query for phone and tablet */
 @media (max-width: 768px) {
     .container {
