@@ -239,7 +239,7 @@ h4{
 
 }
 
-h4 >button span{
+button span{
     
     font-weight: bold;
     color: white;
@@ -262,18 +262,45 @@ button{
 }
 
 
+.power {
+    background-color: #615f5f; /* Set the background color to match the text color */
+    display: inline-block; /* Ensure the background only spans the width of the text */
+    padding: 0 5px; 
+    color: aliceblue;
+}
+
+.power span {
+    background-color: inherit; 
+}
+
+.power {
+    text-align: center; /* Center-align the content */
+    background-color: #615f5f; /* Set the background color */
+    display: inline-block; /* Ensure the background only spans the width of the text */
+    padding: 5px 0; /* Adjust padding as needed */
+    color: aliceblue; /* Set text color */
+    width: 30%;
+    border-radius: 10px;
+    margin-left: 35%;
+}
+    
+
+.highlight{
+    font-size: 25px;
+}
+
 
 /* THE SECOND PART OF THE PAGE */
 
 .second-head{
     color: white;
     font-size: 20px;
-    margin-right: 70px;
+    text-align: left;
 }
 
 .par-one{
     color: white;
-    margin-right: 50px;
+    text-align: left;
 
 
 }
@@ -290,7 +317,7 @@ button{
 .par-two{
     color: white;
     font-size: 10px;
-    margin-right: 70px;
+    text-align: left;
     margin-bottom: 10px;
 }
 
@@ -313,7 +340,7 @@ button{
 
 .par-two + ul{
     color: white;
-    margin-left: 30px;
+    text-align: left;
     font-size: 15px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -328,12 +355,14 @@ button{
 color: white;
 font-size: 20px;
 margin-bottom: 30px;
+text-align: left;
 
 
 }
 
 .agency{
-    margin-right: 40px;
+    text-align: left;
+    
 }
 
 .par-three{
@@ -341,3 +370,69 @@ margin-bottom: 30px;
     font-size: 15px;
 
 }
+
+.par-four{
+    color: white;
+font-size: 15px;
+margin-top: 50px;
+text-align: left;
+
+}
+
+ .container {
+        display: flex;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+
+    .owner-pic img {
+        border-radius: 50%;
+        color: aliceblue;
+    }
+    
+.owner-name{
+    color: aliceblue;
+    margin: 50x;
+    font-size: 20px;
+}
+
+.owner-pic img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.owner-pic .owner-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+/* Default styles */
+.container-main {
+    display: grid;
+    grid-template-columns: 500px 250px;
+    grid-template-rows: 750px auto;
+    gap: 0;
+    border-radius: 100px;
+}
+
+/* Media query for phone and tablet */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container-main {
+        grid-template-columns: 1fr; /* Display as a single column on smaller screens */
+        grid-template-rows: auto; /* Adjust rows as needed */
+        border-radius: 0; /* Remove border radius if needed */
+    }
+}
+
+
+
+
+
