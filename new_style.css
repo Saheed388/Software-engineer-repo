@@ -1,0 +1,343 @@
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.container.head {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between image and list items */
+    align-items: center; /* Vertically center items */
+    
+}
+
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin-left: 10px; 
+    color: navy;
+    font-size: 15px;
+  }
+
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li:last-child {
+    margin-right: 0; 
+  }
+  
+  .container.head img {
+    margin-right: 10px; /* Move the image to the right by 10px */
+  }
+  
+  /* body start from here */
+  .container-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+  }
+
+  
+  .container-main{
+    display: grid;
+    grid-template-columns: 500px 250px ;
+    grid-template-rows: 750px auto ;
+    gap: 0;
+    border-radius: 100px;
+
+  }
+#main-body .container-main{
+    border-radius: 10px;
+
+}
+  
+
+  .first-body{
+    background-color: white;
+  }
+h2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h3{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  .second-body{
+    background-color: rgb(1, 64, 93);
+  }
+
+  .first-body>h2{
+    align-self: flex-start;
+    margin-bottom: 50px; 
+    margin-top: 35px;
+    
+  }
+
+  /* FIRST NAME */
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.first-name .form-label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+   
+}
+
+/* LAST NAME */
+
+.last-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.last-name .form-label {
+    align-self: flex-start;
+    margin-bottom: 5px; 
+    
+}
+
+/*  */
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.first-name,
+.last-name {
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between first and last name */
+    
+}
+
+
+/* mail */
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email .form-label {
+    align-self: flex-start;
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+.email{
+    width: 300px;
+    /* height: 40px; */
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+.email {
+    margin-bottom: 50px; 
+}
+
+/* payment */
+.Payment-info {
+    margin-top: 30px;
+    
+}
+
+.Payment-info h3 {
+    margin-top: 10px; /* Adjust the margin-top of the text */
+}
+
+.Payment-info svg {
+    margin-top: 10px; /* Adjust the margin-top of the SVG icon */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .form-label {
+    align-self: flex-start;
+    margin-bottom: 5px; 
+    margin-top: 5px;
+}
+
+.card {
+    margin-bottom: 50px; 
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.button>button{
+    width: 90%;
+    background-color: rgb(6, 99, 94);
+    color: aliceblue;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+    border: 0;
+}
+
+.button>button{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+ 
+}
+
+
+/* increase the box height */
+
+.form-control {
+    height: 40px; /* Adjust the height as needed */
+}
+
+.name-container{
+    width: 95%;
+}
+
+p{
+    text-align: center;
+}
+
+.Payment-info h3>svg{
+    color: rgb(66, 112, 220);
+}
+
+.first-body svg{
+    color: rgb(66, 112, 220);
+}
+
+
+.powerby>h4{
+ text-align: center;
+}
+
+h4{
+    color: aliceblue;
+    width: 40%;
+    border-radius: 10px;
+    height: 30px;
+
+}
+
+h4 >button span{
+    
+    font-weight: bold;
+    color: white;
+   
+    font-size: 30px;
+}
+
+h4 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button{
+   background-color: rgb(177, 177, 177);
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+
+/* THE SECOND PART OF THE PAGE */
+
+.second-head{
+    color: white;
+    font-size: 20px;
+    margin-right: 70px;
+}
+
+.par-one{
+    color: white;
+    margin-right: 50px;
+
+
+}
+
+.par-one .num {
+    font-size: 50px;
+}
+
+.par-one .currency {
+    font-size: 20px;
+
+}
+
+.par-two{
+    color: white;
+    font-size: 10px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+}
+
+.par-two .year{
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+
+}
+
+.par-two + ul {
+    display: block;
+
+}
+
+.listed-item li{
+    margin-bottom: 20px;
+
+}
+
+.par-two + ul{
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.par-two li svg {
+    color: aliceblue;
+}
+
+
+.par-three{
+color: white;
+font-size: 20px;
+margin-bottom: 30px;
+
+
+}
+
+.agency{
+    margin-right: 40px;
+}
+
+.par-three{
+    margin-left: auto;
+    font-size: 15px;
+
+}
